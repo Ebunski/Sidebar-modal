@@ -1,4 +1,4 @@
-# 11. Navbar
+# 12. Sidebar-Modal
 
 This is a simple project from freecodecamp
 
@@ -14,7 +14,10 @@ This is a simple project from freecodecamp
 
 ## Overview
 
-Project features react concepts. it is a responsive navbar with a dynamic link container
+Project features react concepts like contextApi, useContext and custom hooks
+Features: 
+- HomePage with hamburger icon and modal button
+- Sidebar and modal in separate components
 
 ### The challenge
 
@@ -22,7 +25,7 @@ Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Hide/Show the links
+- Hide/Show modal and sidebar
 
 ### Screenshot
 
@@ -37,27 +40,28 @@ Users should be able to:
 
 - React javascript
 - CSS custom properties and dynamically rendered css classes
-- Flexbox
+- Flexbox and grid
 
-### What I learned
+### What I learnt
 
-1)JSX -
-I learnt the layout for a responsive navbar.
-The project featured four blocks of nav bar items grouped to ensure responsiveness.
-Also i noted to create another container wrapping the <ul> </ul> to enable me perform logic
-
-2. Css:
-   I learnt how to layer the classes for responsive design.
-   e.g
-   navbar - with the bg and color for mobile and flex for desktop
+1) Css:
+   Learnt how to style an overlay element - fixed, full width and height,background etc
+   Responsive design - full sidebar on mobile, specific height on desktop
+   Hover effect - switching bg and text colors.
+   Animation: bounce animation
+   transition: transform(-100px) to 0px
    hiding of toggle for desktop and hiding social for mobile
-   links container with an height of zero and giving an height on show.
 
-3. React:
-   Learnt how to combine useEffect, useRef and useState
-   Practical example of useRef hook - navbars,forms.
-   .getBoundingClientRect() - for getting dimensions of elements
-   Refresher on vanilla javascript method of accessing css properties.
+2) React:
+   Learnt how to use the contextApi (especially from a separate file)
+   steps: 
+  1) create separate functional component with the destructured props/parameter of {children}
+  2) create context as usual, functions and states
+  3) context provider and value with {children} nested
+  4) create custom hook for consuming the context - return useContext(AppContext);
+  5) export custom hook , context and contextProvider.
+  6) import context provider in index.js and nest App.js in it
+  7) In components,use the custom hook (combining the context and useContext)
 
 Overall it was a wonderful process.
 
@@ -66,7 +70,8 @@ Overall it was a wonderful process.
 - Website - [coming soon...]
 - LinkedIn - [Ebunoluwa Oyebola]
 - Twitter - [@Ebun_ski](https://www.twitter.com/Ebun_ski)
+- Email - [ebunoyebola03@gmail.com]
 
 ## Acknowledgments
 
-Appreciation to freecodecamp for this series.
+Thank you freecodecamp for this series.
