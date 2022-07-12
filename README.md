@@ -15,7 +15,8 @@ This is a simple project from freecodecamp
 ## Overview
 
 Project features react concepts like contextApi, useContext and custom hooks
-Features: 
+Features:
+
 - HomePage with hamburger icon and modal button
 - Sidebar and modal in separate components
 
@@ -44,31 +45,32 @@ Users should be able to:
 
 ### What I learnt
 
-1) Css:
-   Learnt how to style an overlay element - fixed, full width and height,background etc
+1. Css:
+   Learnt how to style an overlay element - fixed, full width and height,background, visibility/opacity,`etc
    Responsive design - full sidebar on mobile, specific height on desktop
    Hover effect - switching bg and text colors.
    Animation: bounce animation
    transition: transform(-100px) to 0px
    hiding of toggle for desktop and hiding social for mobile
 
-2) React:
+2. React:
    Learnt how to use the contextApi (especially from a separate file)
-   steps: 
-  1) create separate functional component with the destructured props/parameter of {children}
-  2) create context as usual, functions and states
-  3) context provider and value with {children} nested
-  4) create custom hook for consuming the context - return useContext(AppContext);
-  5) export custom hook , context and contextProvider.
-  6) import context provider in index.js and nest App.js in it
-  7) In components,use the custom hook (combining the context and useContext)
+   steps:
+
+- create separate functional component with the destructured props/parameter of {children}
+- create context as usual, functions and states
+- context provider and value with {children} nested
+- create custom hook for consuming the context - return useContext(AppContext);
+- export custom hook and contextProvider.
+- import context provider in index.js and nest App.js in it
+- In components,use the custom hook (combining the context and useContext)
 
 Overall it was a wonderful process.
 
 ## Author
 
 - Website - [coming soon...]
-- LinkedIn - [Ebunoluwa Oyebola]
+- LinkedIn - https://www.linkedin.com/in/ebunoluwa-oyebola-1490021b1
 - Twitter - [@Ebun_ski](https://www.twitter.com/Ebun_ski)
 - Email - [ebunoyebola03@gmail.com]
 
