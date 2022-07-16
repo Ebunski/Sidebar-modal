@@ -1,4 +1,4 @@
-import React, { useContext } from "react"; //we can exclude useContext when using custom hook
+import React from "react"; //we can exclude useContext when using custom hook
 import { FaBars } from "react-icons/fa";
 // import { AppContext } from "./context";   //  we are using custom hook
 import { useGlobalContext } from "./context";
